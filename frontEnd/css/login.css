@@ -1,0 +1,135 @@
+.containerLogin{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* Add padding to containers */
+.containerLogin div{
+  padding: 16px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.animated{
+  background:rgb(36, 35, 35);
+  -webkit-animation-duration: 2s;
+   animation-duration: 2s;
+   -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-300px);
+    transform: translateY(-300px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-300px);
+    -ms-transform: translateY(-300px);
+    transform: translateY(-300px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+
+
+/* Full-width input fields */
+.logInput[type=password], .logInput[type=email]{
+  width:500px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border-radius:8px;
+  background: #f1f1f1;
+}
+
+.logInput[type=email]:focus, .logInput[type=password]:focus{
+
+  outline: none;
+}
+
+.logInput.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+  /* border: 3px solid #ff005e; */
+  border: 2px solid rgb(224, 73, 14);
+  /* border-image-source: linear-gradient(45deg, rgb(235, 117, 21), rgb(218, 43, 13));
+  border-image-slice: 2; */
+}
+
+
+
+.logInput[disabled="disabled"]{
+  cursor:not-allowed !important;
+  opacity: 0.4;
+}
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: rgb(238, 139, 73);
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  text-align: center;
+}

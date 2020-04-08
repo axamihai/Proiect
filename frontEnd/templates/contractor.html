@@ -1,0 +1,93 @@
+<div class="contentC" ng-controller="editController" >
+
+
+
+	<div class="details">
+		<form method="post" name="detailsForm" class="detailsForm">
+			<div class="form-group">
+				<b><label for="firstName">{{'register.first.name' | translate}}:</label></b>
+				<input class="edit" type="text" id="firstName" ng-model="details.name" ng-required="true"
+					ng-hide="editorEnabled" />
+				<span ng-show="editorEnabled">{{ details.name }}</span>
+			</div>
+
+
+			<div class="form-group">
+				<b><label for="lastName">{{'register.last.name' | translate}}:</label></b>
+				<input type="text" id="lastName" ng-model="details.lastName" ng-required="true"
+					ng-hide="editorEnabled" />
+				<span ng-show="editorEnabled">{{ details.lastName }}</span>
+			</div>
+
+
+			<div class="form-group">
+				<b><label for="mobile">{{'register.phone.name' | translate}}:</label></b>
+				<input type="text" id="mobile" data-ng-model="details.mobile" ng-required="true" minlength="10"
+					maxlength="10" pattern="/^\+?\d{2}[- ]?\d{3}[- ]?\d{5}$/" only-digits="" ng-hide="editorEnabled" />
+				<span ng-show="editorEnabled">{{ details.mobile }}</span>
+			</div>
+
+
+			<div class="form-group">
+				<b><label for="stageName">{{'register.stage.name' | translate}}:</label></b>
+				<input type="text" id="stageName" ng-model="details.numescena" ng-required="true"
+					ng-hide="editorEnabled" />
+				<span ng-show="editorEnabled">{{ details.numescena }}</span>
+
+			</div>
+
+
+			<div class="form-group">
+				<b><label for="youtube">{{'register.youtube.name' | translate}}:</label></b>
+				<input type="text" id="youtube" ng-model="details.canalyoutube" ng-required="true"
+					ng-hide="editorEnabled" />
+				<span ng-show="editorEnabled">{{ details.canalyoutube }}</span>
+			</div>
+
+
+			<div class="form-group">
+				<button class="btn" form="detailsForm" ng-show="editorEnabled" title="Edit"
+					ng-click="edit()">Edit</button>
+				<button class="btn" form="detailsForm" type="button" ng-hide="editorEnabled"
+					data-ng-click="confirm()">Save</button>
+			</div>
+
+
+		</form>
+
+	</div>
+	<div class="imageAvt" >
+				<div>
+				<img  class="avatar" 
+								ng-src="{{name}}" 
+								>
+				</div> 
+				<span>
+				<input  type="file"
+						name="myfile" 
+						file-model = "uploadedFile" 
+						placeholder="Upload File" 
+						onchange="angular.element(this).scope().uploadFile(this.files)"></input>  
+				</span> 
+			
+	</div>
+
+	
+
+
+	<div class="description" >
+
+		<form class="descr">
+			<div>
+			<label for="youtube">Descriere:</label>
+			<textarea class="textarea" type="text" ng-model="details.descriere"
+				ng-hide="editorEnabledDescr"></textarea>
+			<div class ="editDescr"><span ng-show="editorEnabledDescr">{{ details.descriere }}</span></div>
+			<button class="btn" form="descr" ng-show="editorEnabledDescr" title="Edit" ng-click="editDescr()">Edit</button>
+			<button class="btn" form="descr" type="button" ng-hide="editorEnabledDescr"
+				data-ng-click="confirm()">Save</button></div>
+		</form>
+
+	</div>
+</div>
+</div>

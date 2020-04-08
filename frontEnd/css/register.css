@@ -1,0 +1,109 @@
+.contentReg{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* Add padding to containers */
+.contentReg div {
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.animated{
+  background:rgb(36, 35, 35);
+  -webkit-animation-duration: 2s;
+   animation-duration: 2s;
+   -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-300px);
+    transform: translateY(-300px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-300px);
+    -ms-transform: translateY(-300px);
+    transform: translateY(-300px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+/* Full-width input fields */
+.regInput[type=text], .regInput[type=password], .regInput[type=email] {
+  width:500px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  background: #f1f1f1;
+  border-radius: 8px;
+
+
+}
+.regInput[type=text]:focus, .regInput[type=password]:focus, .regInput[type=email]:focus{
+  outline: none;
+}
+
+.regInput[type=text]:focus, .regInput[type=password]:focus {
+
+  background-color: #ddd;
+
+}
+.regInput.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+	border: 2px solid rgb(224, 73, 14);
+}
+.regInput[disabled="disabled"]{
+  cursor: not-allowed !important;
+  opacity: 0.4;
+}
+
+/* Add a blue text color to links */
+a {
+  text-decoration: none;
+}
+.select{
+  margin:50px;
+}

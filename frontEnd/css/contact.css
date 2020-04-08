@@ -1,0 +1,204 @@
+.animatedContactInfo{
+    padding-top:20px;
+    padding-bottom: 20px;
+    -webkit-animation-duration: 4s; 
+    animation-duration: 4s; 
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; 
+  }
+  
+  @-webkit-keyframes bounceInLeft {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateX(-2000px);
+    }
+    60% {
+       opacity: 1;
+       -webkit-transform: translateX(30px);
+    }
+    80% {
+       -webkit-transform: translateX(-10px);
+    }
+    100% {
+       -webkit-transform: translateX(0);
+    }
+  }
+  
+  @keyframes bounceInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-2000px);
+    }
+    60% {
+       opacity: 1;
+       transform: translateX(30px);
+    }
+    80% {
+       transform: translateX(-10px);
+    }
+    100% {
+       transform: translateX(0);
+    }
+  }
+  
+  .bounceInLeft {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
+  }
+  
+  .animatedContactForm {
+  
+    padding-top:20px;
+    padding-bottom: 20px;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes bounceInRight {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateX(2000px);
+    }
+    60% {
+       opacity: 1;
+       -webkit-transform: translateX(-30px);
+    }
+    80% {
+       -webkit-transform: translateX(10px);
+    }
+    100% {
+       -webkit-transform: translateX(0);
+    }
+  }
+  
+  @keyframes bounceInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(2000px);
+    }
+    60% {
+       opacity: 1;
+       transform: translateX(-30px);
+    }
+    80% {
+       transform: translateX(10px);
+    }
+    100% {
+       transform: translateX(0);
+    }
+  }
+  
+  .bounceInRight {
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+  }
+  
+  .containerContact{
+      display: grid;
+      grid-template-columns:50% 50%;
+      grid-gap:10px;
+      padding: 16px;
+      border-radius: 20px;
+      margin-top: 10px;
+      width: 1030px;
+ 
+     
+    }
+    .contactInfo{
+        
+        margin:50px 10px 50px 10px;
+        display:grid;
+        grid-template-rows:20% 80%;
+        grid-gap:5px;
+        padding:5px;
+       
+        border:solid  rgb(238, 139, 73);
+        border-radius: 8px;
+        height:300px;
+  
+       
+    } 
+.infoheader{
+  text-align:center;
+}
+.infoDet{
+    display:grid;
+    grid-template-columns: 50% 50%; 
+    padding:5px;
+    text-align: right;
+  }
+
+.info{
+  text-align: left;
+  font-size:15px;
+}
+.detail{
+  border:none;
+}
+.contactForm{
+    display:grid;
+    grid-template-rows: 20% 80%;
+    grid-column: 2;
+    height:auto;
+    /* padding:5px; */
+    background: rgb(36, 35, 35);
+    border-radius: 8px;
+    height: 400px;
+  
+
+  }
+
+ .Cform{
+   
+    height:80px;
+    text-align: centre;
+    font-size:15px;
+  }
+
+.formular{
+  display:grid;
+  grid-template-rows:30% 70%;
+  align-content: center;
+  margin-left: 15px;
+}
+
+.nameEmailBox{
+  display:grid;
+  grid-template-columns: 50% 50%;
+
+}
+
+.msgBox{
+  display:grid;
+  grid-template-rows: 80% 20%;
+}
+
+.btnComment{
+  width:450px;
+  height:45px;
+  margin-left: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color:rgb(238, 139, 73);
+}
+.nameBox{
+  width:200px;
+  height:45px;
+  border-radius:5px;
+
+}
+
+.emailBox{
+  width:200px;
+  height:45px;
+  border-radius:5px;
+}
+
+.messageBox{
+  width:450px;
+  height:150px;
+  border-radius:5px;
+}
+
